@@ -1,0 +1,72 @@
+.add_marker_container {
+  width: 100%;
+  background: #382A64;
+  height: 300px;
+  z-index: 1;
+  bottom: 0;
+  position: fixed;
+  display: none;
+
+  .title {
+    text-align: center;
+    background: #ED4648;
+    width: 100%;
+    color: #fff;
+    padding: 15px;
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+  .rating {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.1em;
+    .select {
+      margin-top: 12px;
+    }
+    .description {
+      width: 75%;
+      margin: auto;
+      margin-top: 15px;
+      font-size: .6em;
+      line-height: 1.1em;
+    }
+  }
+
+  .confirm {
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+
+    button {
+      display: none;
+      background: #ED4648 !important;
+      width: 75%;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .confirm {
+      text-align: left !important;
+      button {
+        width: auto !important;
+        margin-left: 50px !important;
+      }
+    }
+
+    .rating {
+      margin-left: 50px !important;
+      text-align: left !important;
+    }
+    .title {
+      text-align: left !important;
+      padding-left: 50px !important;
+    }
+    .description {
+      margin: 20px 0 0 0 !important;
+    }
+  }
+}

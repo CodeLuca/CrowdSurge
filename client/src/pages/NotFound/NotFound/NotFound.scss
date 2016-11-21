@@ -1,0 +1,17 @@
+.notFound_conatiner {
+  width: 100%;
+  text-align: center;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .title {
+    font-size: 10em;
+
+    @media (max-width: 1000px) {
+      font-size: 6em;
+      padding: 35px;
+    }
+  }
+}
